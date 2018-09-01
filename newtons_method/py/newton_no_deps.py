@@ -18,21 +18,22 @@ from __future__ import print_function, division
 # TOL   - the tolerance used to test if the answer is "close enough"
 # MAX   - the maximum number of iterations before giving up
 # GUESS - the initial guess for the root
-TOL = 1e-5 
-MAX = 1e5   
-GUESS = -1   
+TOL = 1e-5
+MAX = 1e5
+GUESS = 1
 
 
 # This is the function being used.
 def f(x):
-    return 2*x + 3*x**2
+    #return 2*x + 3*x**2
+    return 2*x - 1
 
 # This is the derivative of the function, f.
 def df(x):
-    return 2 + 6*x
+    #return 2 + 6*x
+    return 2
 
-
-# This is Newton's Method. This should not be changed. 
+# This is Newton's Method. This should not be changed.
 def newtons_method(f, df, x0, tol):
     x = x0
     for n in xrange(0, int(MAX)):

@@ -42,8 +42,8 @@ J = zeros(2, 2);
 X = zeros(2);
 
 % Initial Guess
-X(1) = 300;
-X(2) = 200;
+X(1) = sqrt(200);
+X(2) = 0;
 
 % Newton's Method
 MaxIters = 8; 
